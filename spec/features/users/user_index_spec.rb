@@ -22,4 +22,16 @@ feature 'User index page', :devise do
     expect(page).to have_content user.email
   end
 
+  # Scenario: /all_users page redirects to /users
+  #   Given I am signed in
+  #   When I enter /all_users page
+  #   Then I get to /users page
+  scenario 'user visits /all_users page' do
+    user = FactoryGirl.create(:user)
+    login_as(user, scope: :user)
+    visit '/all_users'
+    p current_path
+    expect(current_path).to eq users_path
+  end
+
 end
