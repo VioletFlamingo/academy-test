@@ -7987,3 +7987,520 @@ Processing by UsersController#index as HTML
   Rendered layouts/_navigation.html.erb (5.1ms)
   Rendered layouts/_messages.html.erb (0.1ms)
 Completed 200 OK in 188ms (Views: 186.5ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.6ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-27 21:00:35 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VisitorsController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered visitors/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_navigation_links.html.erb (5.3ms)
+  Rendered layouts/_navigation.html.erb (9.9ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 4190ms (Views: 4177.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-27 21:00:39 +0100
+Processing by VisitorsController#index as HTML
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_navigation.html.erb (5.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 186ms (Views: 184.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-02-27 21:00:42 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (471.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (3.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 661ms (Views: 642.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-02-27 21:00:44 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1d2wOOKjptxV8E6ZpaZNtiE5fIDdmzOxnKjK6nG+hxUJTzjqv81vCeh77nzAkro0mH5v7dO0QRtchSbaydCm/g==", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "user@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-02-27 18:09:32.680157"], ["current_sign_in_at", "2015-02-27 20:00:44.887536"], ["sign_in_count", 17], ["updated_at", "2015-02-27 20:00:44.889255"], ["id", 1]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 151ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-27 21:00:44 +0100
+Processing by VisitorsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered visitors/index.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.8ms)
+  Rendered layouts/_navigation.html.erb (6.0ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 208ms (Views: 206.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2015-02-27 21:00:47 +0100
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (1.4ms)[0m  SELECT  "cities".* FROM "cities" LIMIT 25 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (17.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.8ms)
+  Rendered layouts/_navigation.html.erb (5.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 206ms (Views: 197.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2015-02-27 21:00:50 +0100
+Processing by CitiesController#new as HTML
+  Rendered cities/_form.html.erb (3.1ms)
+  Rendered cities/new.html.erb within layouts/application (7.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_navigation.html.erb (4.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 273ms (Views: 267.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2015-02-27 21:01:02 +0100
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT  "cities".* FROM "cities" LIMIT 25 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (8.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (4.4ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 157ms (Views: 155.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2015-02-27 21:02:22 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT  "cities".* FROM "cities" LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (21.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (24.6ms)
+  Rendered layouts/_navigation.html.erb (29.8ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 456ms (Views: 437.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2015-02-27 21:02:24 +0100
+Processing by CitiesController#new as HTML
+  Rendered cities/_form.html.erb (522.6ms)
+  Rendered cities/new.html.erb within layouts/application (527.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  Rendered layouts/_navigation.html.erb (4.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 709ms (Views: 703.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2015-02-27 21:02:29 +0100
+Processing by CitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oRbQhq8xUgN4OQDdEgxLuXH0uXGoM3DnbqJ9wspc6OFfk408aI8N/a3THxIWN+YL51aC9KXRx15O/cZnRHw4IQ==", "city"=>{"name"=>"aaa", "short_name"=>"A"}, "commit"=>"Create City"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "aaa"], ["short_name", "A"], ["created_at", "2015-02-27 20:02:29.152024"], ["updated_at", "2015-02-27 20:02:29.152024"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/cities/8
+Completed 302 Found in 26ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/cities/8" for 127.0.0.1 at 2015-02-27 21:02:29 +0100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered cities/show.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.6ms)
+  Rendered layouts/_navigation.html.erb (5.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 189ms (Views: 184.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2015-02-27 21:02:32 +0100
+Processing by CitiesController#index as HTML
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities" LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (8.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_navigation.html.erb (4.2ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 183ms (Views: 181.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2015-02-27 21:02:34 +0100
+Processing by CitiesController#new as HTML
+  Rendered cities/_form.html.erb (1.8ms)
+  Rendered cities/new.html.erb within layouts/application (5.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (4.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 172ms (Views: 171.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2015-02-27 21:02:37 +0100
+Processing by CitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WZxTWygfmu96swHKLfl2ICI5LsabkqV5Fs/S1nuqr5qnGQ7h76HFEa9ZHgUpwtuStJsVQ5ZwEsA2kGlz9Yp/Wg==", "city"=>{"name"=>"bbb", "short_name"=>"B"}, "commit"=>"Create City"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "bbb"], ["short_name", "B"], ["created_at", "2015-02-27 20:02:37.724550"], ["updated_at", "2015-02-27 20:02:37.724550"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/cities/9
+Completed 302 Found in 24ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/cities/9" for 127.0.0.1 at 2015-02-27 21:02:37 +0100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mCity Load (0.1ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered cities/show.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (2.9ms)
+  Rendered layouts/_navigation.html.erb (6.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 180ms (Views: 177.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2015-02-27 21:02:39 +0100
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT  "cities".* FROM "cities" LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (9.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (4.8ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 184ms (Views: 182.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2015-02-27 21:02:41 +0100
+Processing by CitiesController#new as HTML
+  Rendered cities/_form.html.erb (1.6ms)
+  Rendered cities/new.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  Rendered layouts/_navigation.html.erb (4.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 171ms (Views: 169.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2015-02-27 21:02:45 +0100
+Processing by CitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ic9Aku8ivJXH84cuMs+awrR/4zB3Cem0sxCY29jCc/HfSh0oKJzjaxIZmOE29DdwIt3YtXrrXg2TTyN+VuKjMQ==", "city"=>{"name"=>"ccc", "short_name"=>"C"}, "commit"=>"Create City"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "ccc"], ["short_name", "C"], ["created_at", "2015-02-27 20:02:45.575915"], ["updated_at", "2015-02-27 20:02:45.575915"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/cities/10
+Completed 302 Found in 23ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/cities/10" for 127.0.0.1 at 2015-02-27 21:02:45 +0100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 10]]
+  Rendered cities/show.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.6ms)
+  Rendered layouts/_navigation.html.erb (5.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 176ms (Views: 174.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2015-02-27 21:02:47 +0100
+Processing by CitiesController#index as HTML
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities" LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (9.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.8ms)
+  Rendered layouts/_navigation.html.erb (7.1ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 194ms (Views: 193.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2015-02-27 21:02:48 +0100
+Processing by CitiesController#new as HTML
+  Rendered cities/_form.html.erb (2.0ms)
+  Rendered cities/new.html.erb within layouts/application (4.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (2.1ms)
+  Rendered layouts/_navigation.html.erb (5.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 171ms (Views: 170.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2015-02-27 21:02:53 +0100
+Processing by CitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hoqvDyJYJgR3MsLtM8YT0uQY9DT6VuwgDHIhGjfdokh4D/K15eZ5+qLY3SI3/b5gcrrPsfe0W5ksLZq/uf1yiA==", "city"=>{"name"=>"ddd", "short_name"=>"D"}, "commit"=>"Create City"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "ddd"], ["short_name", "D"], ["created_at", "2015-02-27 20:02:53.600087"], ["updated_at", "2015-02-27 20:02:53.600087"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/cities/11
+Completed 302 Found in 24ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/cities/11" for 127.0.0.1 at 2015-02-27 21:02:53 +0100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mCity Load (0.1ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered cities/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.9ms)
+  Rendered layouts/_navigation.html.erb (7.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 185ms (Views: 183.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2015-02-27 21:02:56 +0100
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.3ms)[0m  SELECT  "cities".* FROM "cities" LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (10.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_navigation.html.erb (4.2ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 178ms (Views: 175.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2015-02-27 21:02:57 +0100
+Processing by CitiesController#new as HTML
+  Rendered cities/_form.html.erb (2.3ms)
+  Rendered cities/new.html.erb within layouts/application (5.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  Rendered layouts/_navigation.html.erb (4.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 181ms (Views: 179.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2015-02-27 21:03:02 +0100
+Processing by CitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nVxbe+IoBCwGTQJSNOz7E/tNL3nY4mv35FD003Ey0dRj2QbBJZZb0tOnHZ0w11ahbe8U/NUA3E7ED092/xIBFA==", "city"=>{"name"=>"eee", "short_name"=>"E"}, "commit"=>"Create City"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "eee"], ["short_name", "E"], ["created_at", "2015-02-27 20:03:02.192770"], ["updated_at", "2015-02-27 20:03:02.192770"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/cities/12
+Completed 302 Found in 22ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/cities/12" for 127.0.0.1 at 2015-02-27 21:03:02 +0100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mCity Load (0.1ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 12]]
+  Rendered cities/show.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  Rendered layouts/_navigation.html.erb (6.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 174ms (Views: 172.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2015-02-27 21:03:03 +0100
+Processing by CitiesController#index as HTML
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities" LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (9.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (4.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 198ms (Views: 197.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2015-02-27 21:03:04 +0100
+Processing by CitiesController#new as HTML
+  Rendered cities/_form.html.erb (6.2ms)
+  Rendered cities/new.html.erb within layouts/application (9.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (4.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 177ms (Views: 175.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2015-02-27 21:03:08 +0100
+Processing by CitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k6UDEYSi73YZUGIv7Fbxq+uoCsj7zMioFQUUm9pDYkdtIF6rQxywiMy6feDobVwZfQoxTfYufxE1Wq8+VGOyhw==", "city"=>{"name"=>"fff", "short_name"=>"F"}, "commit"=>"Create City"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cities" ("name", "short_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "fff"], ["short_name", "F"], ["created_at", "2015-02-27 20:03:08.766849"], ["updated_at", "2015-02-27 20:03:08.766849"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/cities/13
+Completed 302 Found in 26ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/cities/13" for 127.0.0.1 at 2015-02-27 21:03:08 +0100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mCity Load (0.2ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1  [["id", 13]]
+  Rendered cities/show.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.6ms)
+  Rendered layouts/_navigation.html.erb (5.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 179ms (Views: 177.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2015-02-27 21:03:10 +0100
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT  "cities".* FROM "cities" LIMIT 5 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (44.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (2.8ms)
+  Rendered layouts/_navigation.html.erb (6.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 210ms (Views: 208.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cities?page=2" for 127.0.0.1 at 2015-02-27 21:03:13 +0100
+Processing by CitiesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities" LIMIT 5 OFFSET 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (45.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.9ms)
+  Rendered layouts/_navigation.html.erb (5.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 214ms (Views: 212.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2015-02-27 21:03:15 +0100
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT  "cities".* FROM "cities" LIMIT 5 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (39.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (4.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 230ms (Views: 228.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities?page=2" for 127.0.0.1 at 2015-02-27 21:03:22 +0100
+Processing by CitiesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities" LIMIT 5 OFFSET 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (34.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (2.3ms)
+  Rendered layouts/_navigation.html.erb (6.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 205ms (Views: 203.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2015-02-27 21:03:25 +0100
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT  "cities".* FROM "cities" LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (37.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  Rendered layouts/_navigation.html.erb (5.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 214ms (Views: 212.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/cities/9" for 127.0.0.1 at 2015-02-27 21:03:31 +0100
+Processing by CitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9ZOvkF3dm3KpiqrVV6jUi87ZfLF/NsU64poWYHu+nLQLFvIqmmPEjHxgtRpTk3k5WHtHNHLUcoPCxa3F9Z5MdA==", "id"=>"9"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."city_id" = 9
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "cities" WHERE "cities"."id" = ?  [["id", 9]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/cities
+Completed 302 Found in 29ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2015-02-27 21:03:31 +0100
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.3ms)[0m  SELECT  "cities".* FROM "cities" LIMIT 5 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (10.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.6ms)
+  Rendered layouts/_navigation.html.erb (5.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 180ms (Views: 178.2ms | ActiveRecord: 0.6ms)

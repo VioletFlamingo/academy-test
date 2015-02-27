@@ -4,7 +4,7 @@ class CitiesController < ApplicationController
   respond_to :html
 
   def index
-    @cities = City.all
+    @cities = City.all.page(params[:page]).per(5)
     respond_with(@cities)
   end
 
