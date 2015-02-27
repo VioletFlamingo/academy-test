@@ -32,6 +32,11 @@ class CitiesController < ApplicationController
   end
 
   def destroy
+    User.where(city_id: @city).each do |u|
+      u.city_id = nil
+      u.save
+    end
+
     @city.destroy
     respond_with(@city)
   end
